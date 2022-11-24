@@ -1,0 +1,148 @@
+// ---------------------------- Variables---------------------------------------------------------------------------//
+/*Colors*/
+$white: #fffcf5;
+$dark-grey: #353535;
+
+
+// ---------------------------- Responsive ---------------------------------------------------------------------------//
+@mixin phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin big-desktop {
+  @media (min-width: 1800px) { @content; }
+}
+
+
+
+// ---------------------------- Main styles  ---------------------------------------------------------------------------//
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f1efe7;
+    color: #3b3936;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section {
+  padding: 40px 0;
+  box-sizing: border-box;
+
+  @include desktop {
+    padding: 80px 0;
+  }
+}
+
+.coll-full {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    &.flex-direction-row{
+      flex-direction: row;
+    }
+
+    &.max-width-small {
+      max-width: 900px;
+    }
+
+    &.max-width-x-small {
+      max-width: 600px;
+    }
+}
+
+strong {
+    font-weight: bold;
+}
+
+
+.p1 {
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.p2 {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+
+a {
+  text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.title1 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  font-size: 2.7em;
+  font-weight: 600;
+  margin: 20px 0;
+
+  @include desktop {
+    font-size: 3em;
+  }
+}
+
+.title2 {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.title3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.title4 {
+  font-size: 0.9em;
+  font-weight: 700;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
