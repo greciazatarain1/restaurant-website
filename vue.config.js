@@ -10,5 +10,9 @@ module.exports = defineConfig({
         path.resolve(__dirname, './src/assets/scss/main.scss'),
       ]
     }
-  }
+  },
+
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/project-restaurant/'
+  : '/'
 });
