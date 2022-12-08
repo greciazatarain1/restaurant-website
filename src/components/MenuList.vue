@@ -11,7 +11,8 @@
                     <MenuItem 
                         v-for="dish in category.dishes" 
                         :key="dish.id" 
-                        :menuItemImage="dish.image" 
+                        :menuItemImage="dish.image"
+                        :menuItemAltImage="dish.name"  
                         :menuItemName="dish.name" 
                         :menuItemDescription="dish.description"
                         :menuItemPrecio="dish.precio" />
@@ -48,7 +49,7 @@ export default {
                                 id: "2",
                                 image: require("@/assets/dishes/img-dish-02.jpg"),
                                 name: "Aguachile",
-                                 description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
+                                description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
                                 precio: "13,00 €"
                             }
                         ]
@@ -61,7 +62,7 @@ export default {
                                 id: "3",
                                 image: require("@/assets/dishes/img-dish-03.jpg"),
                                 name: "Pulpo al Ajillo",
-                                 description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
+                                description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
                                 precio: "22,00 €"
                             },
                             {
@@ -81,7 +82,7 @@ export default {
                                 id: "5",
                                 image: require("@/assets/dishes/img-dish-06.jpg"),
                                 name: "Chocolate cake",
-                                 description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
+                                description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
                                 precio: "10,00 €"
                             },
                             {

@@ -2,7 +2,7 @@
     <section>
         <div class="coll-full">
             <div class="image-container">
-                <img src="@/assets/chef.jpg" />
+                <img src="@/assets/chef.jpg" alt="The Chef" />
             </div>
             <div class="text-container">
                 <h3 class="title2">The Chef</h3>

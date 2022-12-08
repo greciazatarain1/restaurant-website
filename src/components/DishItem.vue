@@ -1,6 +1,6 @@
 <template>
     <div class="item-card">
-        <img :src="dishImage" />
+        <img :src="dishImage" :alt="dishAltImage" />
         <h3 class="title3">{{ dishName }}</h3>
         <p class="p2">{{ dishDescription }}</p>
     </div>
@@ -12,7 +12,8 @@ export default {
     props: {
         dishImage: String,
         dishName: String,
-        dishDescription: String
+        dishDescription: String,
+        dishAltImage: String
     }
 };
 </script>

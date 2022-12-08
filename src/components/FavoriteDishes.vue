@@ -8,7 +8,8 @@
                     :key="dish.id" >
                         <DishItem
                             class="carousel__item" 
-                            :dishImage="dish.image" 
+                            :dishImage="dish.image"
+                            :dishAltImage="dish.name"  
                             :dishName="dish.name" 
                             :dishDescription="dish.description" />
                 </Slide>

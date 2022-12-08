@@ -1,7 +1,7 @@
 <template>
     <li class="item-menu">
         <div>
-            <img :src="menuItemImage" />
+            <img :src="menuItemImage" :alt="menuItemAltImage" />
         </div>
         <div class="text-container">
             <h3 class="title3">{{ menuItemName }}</h3>
@@ -19,6 +19,7 @@ export default {
         menuItemName: String,
         menuItemDescription: String,
         menuItemPrecio: String,
+        menuItemAltImage: String,
     }
 };
 </script>

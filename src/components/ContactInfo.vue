@@ -2,7 +2,7 @@
     <section>
         <div class="coll-full max-width-small">
             <div class="image-container">
-                <img src="@/assets/contact-image.jpg" />
+                <img src="@/assets/contact-image.jpg" alt="Book table" />
             </div>
             <div class="text-container">
                 <h2 class="title2 align-left">Book now</h2>
