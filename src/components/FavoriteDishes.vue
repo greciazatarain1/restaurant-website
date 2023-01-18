@@ -18,7 +18,7 @@
                 </template>
             </Carousel>
             <div class="flex-center">
-                <Button1 textButton="See menu" urlButton="/menu" dark="true"/>
+                <Button1 textButton="See menu" urlButton="/menu" :dark="true"/>
             </div>
         </div>
     </section>
