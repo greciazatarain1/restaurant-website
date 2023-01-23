@@ -1,17 +1,17 @@
 <template>
-    <AttractionInner titleAttractionInner="Contact us" imageAttractionInner="cover-contact.jpg"/>
+    <HeroInner titleHeroInner="Contact us" imageHeroInner="cover-contact.jpg"/>
     <ContactInfo />
 
 </template>
 
 <script>
-import AttractionInner from '@/components/AttractionInner.vue'
+import HeroInner from '@/components/HeroInner.vue'
 import ContactInfo from '@/components/ContactInfo.vue';
 
 export default {
   name: 'AboutUsView',
   components: {
-    AttractionInner,
+    HeroInner,
     ContactInfo
 }
 }

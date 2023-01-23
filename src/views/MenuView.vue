@@ -1,16 +1,16 @@
 <template>
-    <AttractionInner titleAttractionInner="Menu" imageAttractionInner="cover-menu.jpg"/>
+    <HeroInner titleHeroInner="Menu" imageHeroInner="cover-menu.jpg"/>
     <MenuList />
 </template>
 
 <script>
-import AttractionInner from '@/components/AttractionInner.vue'
+import HeroInner from '@/components/HeroInner.vue'
 import MenuList from '@/components/MenuList.vue'
 
 export default {
   name: 'MenuView',
   components: {
-    AttractionInner,
+    HeroInner,
     MenuList
   }
 }

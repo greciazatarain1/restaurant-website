@@ -1,10 +1,10 @@
 <template>
-    <RouterLink class="button1" :class="{ dark: dark }" :to="urlButton">{{ textButton }}</RouterLink>
+    <RouterLink class="button" :class="{ 'button--dark': dark }" :to="urlButton">{{ textButton }}</RouterLink>
 </template>
   
 <script>
 export default {
-    name: "Button_1",
+    name: "MainButton",
     props: {
         textButton: String,
         urlButton: String,
@@ -14,7 +14,7 @@ export default {
 </script>
   
 <style scoped lang="scss">
-    .button1 {
+    .button {
         border: 2px solid $white;
         padding: 12px 35px;
         font-size: 1em;
@@ -32,7 +32,7 @@ export default {
             text-decoration: none;
         }
 
-        &.dark{
+        &--dark {
             border-color: $dark-grey;
             color: $dark-grey;
 

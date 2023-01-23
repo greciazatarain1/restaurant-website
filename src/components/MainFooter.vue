@@ -1,10 +1,10 @@
 <template>
-    <footer>
-        <div class="coll-full">
+    <footer class="footer">
+        <div class="footer__container">
             <div>
                 <p class="title4">Book now:</p>
                 <p class="p2">
-                    <a href="tel:898 787 233">
+                    <a class="footer__link" href="tel:898 787 233">
                         <i class="fa-solid fa-phone"></i>
                         898 787 233
                     </a>
@@ -24,7 +24,7 @@
                 </p>
             </div>
             <div>
-                <address>
+                <address class="footer__address">
                     <p class="title4">Address</p>
                     <p class="p2">
                         <i class="fa-solid fa-location-dot"></i> Atun 1232, 
@@ -34,7 +34,7 @@
                 </address>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer__bottom">
             <p class="p2">© 2022 Yuzu R.T.</p>
         </div>
     </footer>
@@ -47,35 +47,38 @@ export default {
 </script>
    
 <style scoped lang="scss">
-    .coll-full {
+.footer {
+    padding: 30px 0 0;
+    text-align: center;
+    background: #3a3630;
+    color: $white;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
         @include desktop {
             flex-direction: revert;
             justify-content: space-around;
         }
     }
 
-    footer {
-        padding: 30px 0 0;
-        text-align: center;
-        background: #3a3630;
+    &__link {
         color: $white;
-
-        a {
-            color: $white;
-            text-decoration: none;
-        }
-
-        .footer-bottom {
-            background-color: #211e1b;
-            padding: 5px 0;
-            font-size: 14px;
-            margin-top: 20px;
-        }
+        text-decoration: none;
     }
 
-    address {
+    &__bottom {
+        background-color: #211e1b;
+        padding: 5px 0;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    &__address {
         font-style: normal;
     }
+}
 </style>
    
    

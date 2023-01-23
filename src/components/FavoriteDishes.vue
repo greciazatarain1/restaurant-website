@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <div class="coll-full">
+    <section class="carousel-section">
+        <div class="carousel-section__container">
             <h2 class="title2">Favorite Dishes</h2>
             <Carousel :wrap-around="true" :breakpoints="breakpoints">
                 <Slide
@@ -18,7 +18,7 @@
                 </template>
             </Carousel>
             <div class="flex-center">
-                <Button1 textButton="See menu" urlButton="/menu" :dark="true"/>
+                <Button textButton="See menu" urlButton="/menu" :dark="true"/>
             </div>
         </div>
     </section>
@@ -28,7 +28,7 @@
 import 'vue3-carousel/dist/carousel.css'
 import  { Carousel, Slide, Navigation } from 'vue3-carousel'
 import DishItem from '@/components/DishItem.vue'
-import Button1 from '@/components/buttons/Button1.vue'
+import Button from '@/components/buttons/Button.vue'
 
 export default {
     name: "FavoriteDishes",
@@ -37,7 +37,7 @@ export default {
         Carousel,
         Slide,
         Navigation,
-        Button1
+        Button
     },
 
     data(){
@@ -94,13 +94,20 @@ export default {
 </script>
   
 <style scoped lang="scss">
-/*Carousel styles*/
-.carousel {
-    padding: 30px 0;
+.carousel-section {
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
 }
 
-.carousel__track {
-    align-items: flex-start;
+.carousel {
+    padding: 30px 0;
+
+    &__track {
+        align-items: flex-start;
+    }
 }
 
 :deep(.carousel__prev) {

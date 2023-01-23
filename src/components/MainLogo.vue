@@ -17,6 +17,10 @@ export default {
     &__link {
           text-decoration: none;
           color: $white;
+
+          &:hover {
+            text-decoration: none;
+          }
     }
 }
 </style>
