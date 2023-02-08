@@ -13,7 +13,6 @@ export default {
 .parallax {
     background-image: url("@/assets/parallax.jpg");
     height: 400px;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,6 +20,7 @@ export default {
 
     @include desktop { 
         height: 600px;
+        background-attachment: fixed;
     }
 
     &::before {
