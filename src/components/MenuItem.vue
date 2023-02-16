@@ -27,6 +27,7 @@ export default {
 <style scoped lang="scss">
 .item-menu {
     padding: 23px 0;
+    list-style: none;
 
     @include desktop {
         display: flex;

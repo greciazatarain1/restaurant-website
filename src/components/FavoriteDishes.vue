@@ -53,7 +53,7 @@ export default {
                     id: '2',
                     image: require("@/assets/dishes/img-dish-02.jpg"),
                     name: "Aguachile",
-                    description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus efficitur finibus elit ac porta.",
+                    description: "Cras sit amet elit neque. Vivamus quis porta diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
                 },
                 {
                     id: '3',
@@ -76,9 +76,14 @@ export default {
             ],
 
             breakpoints: {
-                  // 700px and up
-                700: {
+                // 700px and up
+                300: {
                     itemsToShow: 1,
+                    snapAlign: 'start',
+                },
+                  // 700px and up
+                600: {
+                    itemsToShow: 3,
                     snapAlign: 'center',
                 },
                 // 1024 and up
@@ -102,6 +107,9 @@ export default {
     }
 }
 
+.carousel__slide {
+    align-items: start;
+}
 .carousel {
     padding: 30px 0;
 
